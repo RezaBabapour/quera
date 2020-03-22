@@ -5,7 +5,6 @@ def main():
         command = [False]
         command.append(input().strip().split())
         commands.append(command)
-    print(commands)
     flag = False
     index = 0
     a = 0
@@ -33,6 +32,7 @@ def main():
         if command[1][0] == 'goto':
             index = int(command[1][1]) - 1
 
-    print(output)
+    for item in output:
+        print(item)
 
 if __name__ == "__main__": main()
